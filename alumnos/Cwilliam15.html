@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Alumno · {{APELLIDO}}, {{NOMBRE}}</title>
+  <link rel="stylesheet" href="../assets/style.css"/>
+</head>
+<body>
+<header class="container">
+  <a class="back" href="../index.html">← Volver al índice</a>
+  <h1>{{APELLIDO}}, {{NOMBRE}}</h1>
+  <p class="muted">Usuario GitHub: <code>{{GITHUB_USER}}</code></p>
+</header>
+
+<main class="container narrow">
+  <section>
+  <h2>Presentación</h2>
+  <p>Soy estudiante de Ingeniería en Sistemas con gran interés en la tecnología y la innovación.
+    Me apasiona aprender sobre redes, bases de datos y desarrollo web. En mi tiempo libre disfruto
+    investigar nuevas herramientas digitales, experimentar con proyectos de programación y leer sobre
+    avances en ciberseguridad.</p>
+  <p>Intereses: <span class="muted">redes, bases de datos, desarrollo web, ciberseguridad</span></p>
+  <p>Series Favoritas: <span class="muted">Stranger Things, Black Mirror, The Witcher</span></p>
+</section>
+
+  <section>
+    <h2>Enlaces</h2>
+    <ul>
+      <li>GitHub: <a href="https://github.com/{{GITHUB_USER}}" target="_blank" rel="noopener">github.com/{{GITHUB_USER}}</a></li>
+      <li>LinkedIn (opcional): <a href="{{LINKEDIN_URL}}" target="_blank" rel="noopener">{{LINKEDIN_URL}}</a></li>
+      <li>Portafolio (opcional): <a href="{{PORTAFOLIO_URL}}" target="_blank" rel="noopener">{{PORTAFOLIO_URL}}</a></li>
+    </ul>
+  </section>
+
+<section>
+  <h2>Mini-desafío</h2>
+  <p>Agrega un snippet de código que imprima tu nombre y un mensaje en el lenguaje que prefieras.</p>
+  <pre><code>
+console.log("Hola, soy William Cu y me encanta la tecnología 🚀");</code></pre>
+</section>
+
+</main>
+
+<footer class="container">
+  <p class="muted">Recuerda mantener un buen formateo y validar el HTML.</p>
+</footer>
+</body>
+</html>
